@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Special Website</title>
+</head>
+<body>
+    <div class="password-container" id="passwordContainer">
+        <h2>Enter the Password</h2>
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="errorMessage" class="hidden"></p>
+    </div>
+
+    <div class="content hidden" id="content">
+        <h1>Welcome, Khadija!</h1>
+        <p>This is a special website made just for you.</p>
+        <button onclick="showGratitude()">Express My Gratitude</button>
+        <button id="emergencyButton" onclick="emergencyContact()">Call Me</button>
+        <button onclick="toggleContactForm()">Contact Me</button>
+
+        <div id="contactForm" class="hidden">
+            <h3>Contact Me</h3>
+            <textarea id="message" placeholder="Write your message here..."></textarea>
+            <button onclick="sendEmail()">Send</button>
+        </div>
+
+        <div id="gratitude" class="hidden">
+            <h2>Gratitude Letter</h2>
+            <p>
+                Dear Khadija,<br>
+                I want to take a moment to express how incredibly special you are to me. 
+                You have been a shining light in my life, illuminating my path even during the darkest times. 
+                Although we've parted ways, please know that you remain in my heart and thoughts every single day. 
+                I often find myself reflecting on the beautiful moments we shared, and it brings both a smile and a sense of longing. 
+                I regret not being able to express my feelings better at times, and for that, I am truly sorry. 
+                I feel crazy for leaving; it was never easy, and it weighed heavily on my heart. 
+                You are always on my mind, and my love for you runs deep. 
+                Thank you for every moment, every smile, and every memory. 
+                You are an amazing person, and I wish you nothing but happiness and love in your life. 
+                Always remember, you are cherished beyond words.
+            </p>
+        </div>
+        
+        <div class="end-message hidden" id="endMessage">
+            <h1 style="color: white;">Made Just for You</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
